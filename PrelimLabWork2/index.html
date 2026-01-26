@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Attendance System</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- LOGIN / REGISTER CARD -->
+<div class="card" id="loginCard">
+  <h2 id="title">Login</h2>
+
+  <input id="username" placeholder="Username">
+  <input id="password" type="password" placeholder="Password">
+
+  <button class="login-btn" id="actionBtn" onclick="login()">Log In</button>
+  <p id="toggle" onclick="toggleForm()">No account? Create one</p>
+
+  <p id="message"></p>
+  <p class="time" id="time"></p>
+
+  <button class="download-btn" id="downloadBtn" onclick="downloadFile()">Download Attendance</button>
+</div>
+
+<!-- ADMIN DASHBOARD -->
+<div class="card" id="dashboard">
+  <h2>Admin Dashboard</h2>
+
+  <div class="grid">
+    <div>
+      <h3>Registered Users</h3>
+      <ul id="userList"></ul>
+    </div>
+
+    <div>
+      <h3>Attendance Logs</h3>
+      <ul id="attendanceList"></ul>
+    </div>
+  </div>
+
+  <button class="download-btn" onclick="downloadAll()">Download All Records</button>
+  <button class="reset-btn" onclick="resetAttendance()">Reset Attendance</button>
+  <button class="logout-btn" onclick="logout()">Logout</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
