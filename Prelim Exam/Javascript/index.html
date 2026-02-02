@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Record System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Student Record System</h1>
+            <p class="sub">Bill Gedrick Griar — 23-0426-860</p>
+        </header>
+
+        <section class="form-section">
+            <input type="text" id="studentID" placeholder="Student ID">
+            <input type="text" id="first_name" placeholder="First Name">
+            <input type="text" id="last_name" placeholder="Last Name">
+            <input type="number" id="lab1" placeholder="LAB WORK 1">
+            <input type="number" id="lab2" placeholder="LAB WORK 2">
+            <input type="number" id="lab3" placeholder="LAB WORK 3">
+            <input type="number" id="prelim" placeholder="PRELIM EXAM">
+            <input type="number" id="attendance" placeholder="ATTENDANCE GRADE">
+            <button class="btn" onclick="addRecord()">Add Student</button>
+        </section>
+
+        <section class="table-section">
+            <table>
+                <thead>
+                    <tr>
+                        <th>StudentID</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>LAB WORK 1</th>
+                        <th>LAB WORK 2</th>
+                        <th>LAB WORK 3</th>
+                        <th>PRELIM EXAM</th>
+                        <th>ATTENDANCE GRADE</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody"></tbody>
+            </table>
+        </section>
+
+        <footer>
+            Programmer: Bill Gedrick Griar | Student ID: 23-0426-860
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
