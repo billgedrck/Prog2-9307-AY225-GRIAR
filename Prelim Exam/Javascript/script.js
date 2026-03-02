@@ -86,7 +86,7 @@ function addRecord() {
 }
 
 // ---------- FETCH CSV ----------
-fetch("students.csv")
+fetch("students.csv")   
     .then(response => {
         if (!response.ok) throw new Error("CSV file not found!");
         return response.text();
